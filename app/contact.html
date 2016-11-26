@@ -1,0 +1,24 @@
+<div id="body">
+		<div class="article">
+			<h3>contact us</h3>
+			<div ng-repeat="contact in contacts">
+			<p>
+				{{contact.description}}
+			</p>
+			<ul>
+				<li>
+					<span>Address :</span> {{contact.address}}, {{contact.city}}, {{contact.state}} {{contact.zip}}, {{contact.country}}
+				</li>
+				<li>
+					<span>Office Phone Number :</span> {{contact.office_number}}
+				</li>
+				<li>
+					<span>Fax Number :</span> {{contact.fax_number}}
+				</li>
+				<li>
+					<span>Email :</span> <a href="http://www.freewebsitetemplates.com/misc/contact">{{contact.email}}</a>
+				</li>
+			</ul>
+			</div>
+		</div>
+	</div>
